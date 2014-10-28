@@ -13,11 +13,15 @@ class ProtractorRunnerGrailsPlugin {
     def author = "Piotr Majcher"
     def authorEmail = "piotr.majcher.pl@gmail.com"
     def description = '''\
-Brief summary/description of the plugin.
+Plugin that allow to run protractor e2e test .
 '''
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/protractor-runner"
+
+    def environments = ['development', 'test']
+
+    def scopes = [excludes:'war']
 
     // Extra (optional) plugin metadata
 
